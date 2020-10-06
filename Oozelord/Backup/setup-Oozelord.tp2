@@ -1,0 +1,211 @@
+BACKUP ~oozelord/Backup~ // So WeiDU can uninstall
+AUTHOR ~Dracoqwerty~
+README ~oozelord/readme.txt~ // Shows readme file
+VERSION ~1.0~
+LANGUAGE ~English~ ~english~ ~oozelord/lang/english/oozelord.tra~
+BEGIN @1
+	INCLUDE ~oozelord/lib/fl#add_kit_ee.tpa~ // EE compatibility patch, updated version by Subtledoctor
+	INCLUDE ~oozelord/lib/functions.tph~   // Borrowed from Argent77 for dynamic animtion slot search code
+	INCLUDE ~oozelord/lib/handle_charsets.tpa~   // Borrowed from Edwin Romance: convert strings to UTF-8 for BGEE/BG2EE
+	ACTION_IF (NOT GAME_IS ~soa tob iwd2 pst bg1 totsc iwd how totlm tutu tutu_totsc bgt ca iwd_in_bg2 bg2ee eet iwdee~) THEN BEGIN     // Check if BGEE/SOD
+ 		COPY ~oozelord/2da/25STWEAP.2DA~ ~override~                                                               // Add working 25STWEAP.2DA copy from BGII so ADD_KIT command doesn't break
+END
+  
+  BEGIN @1 
+ 
+
+// Internal name of the kit
+  ADD_KIT ~D8#OO~
+
+// Appended to CLASWEAP.2da
+  ~D8#OO                0           0           1           1           0           1           0           0~
+
+// Appended column-wise to WEAPPROF.2da
+  ~D8#OO 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+// Appended to ABCLASRQ.2da
+  ~D8#OO                0       0       12     0       12      0~
+
+// Appended to ABCLSMOD.2da
+  ~D8#OO                0       0       0      0       0       -15~
+
+// Appended to ABDCDSRQ.2da
+  ~D8#OO                0       0       12       0       17      0~
+
+// Appended to ABDCSCRQ.2da
+  ~D8#OO                0       0       12       0       17      0~
+
+// Appended to ALIGNMNT.2da
+  ~D8#OO                0       0       0      0       1       1       0       1       1~ // LG LN LE NG NN NE CG CN CE
+
+// Appended to DUALCLAS.2da
+  ~D8#OO                1       0       1       1       0       1~
+
+// Path to my CLAB.2da file 
+  ~oozelord/2da/D8OOZE.2da~
+
+// PC races and classes allowed to use this kit, from KITTABLE.2da
+  ~K_C_H    K_C_D   K_C_G   K_C_E   K_C_HE   K_C_HL   K_C_HO~
+
+// Usability flags, added to the end of the KITLIST.2da entry
+  ~0x01000000        3~
+
+// HLA table to use; see LUABBR.2da
+  ~LUD8O~
+
+// List of starting equipment for PCs starting in ToB. Appended column-wise to 25STWEAP.2da
+  ~* * * * * * * * * * * * * * * * * * * *~ // None, to prevent errors with create party
+  
+// Lower, mixed, and help kit names and descriptions, added to KITLIST.2da 
+  SAY @2
+  SAY @2
+  SAY @3
+  
+// Call EE compatibility patch
+    LAF fl#add_kit_ee
+    	STR_VAR
+    		kit_name = D8#OO
+
+END 
+///////////////////////////////
+//       Copy Stuff Over     //
+///////////////////////////////
+
+// Bulk Copy
+BEGIN ~Copying (INSTALL THIS)~	 
+// Items
+  COPY "oozelord/itm/D8_BLKPD.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name	
+  COPY "oozelord/itm/D8_BONEW.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name	
+  COPY "oozelord/itm/D8_CONFL.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name	
+  COPY "oozelord/itm/D8_EBLPD.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name	
+  COPY "oozelord/itm/D8_TRTMP.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name	
+  COPY "oozelord/itm/D8_ZARGB.ITM" "override"
+  	SAY NAME1 @47 // unidentified name for itm OR spell name
+  	SAY NAME2 @47 // unidentified name for itm OR spell name	
+  COPY "oozelord/itm/D8_ZARGW.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name
+  COPY "oozelord/itm/D8OOZASP.ITM" "override"
+  	SAY NAME1 @34 // unidentified name for itm OR spell name
+  	SAY NAME2 @34 // unidentified name for itm OR spell name
+  	SAY UNIDENTIFIED_DESC @35 // unidentified description for itm, spell description for spells	
+ 	SAY IDENTIFIED_DESC @35 // unidentified description for itm, spell description for spells		
+  COPY "oozelord/itm/JELLMU1.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name
+  COPY "oozelord/itm/JELLOC1.ITM" "override"
+  	SAY NAME1 @46 // unidentified name for itm OR spell name
+  	SAY NAME2 @46 // unidentified name for itm OR spell name
+  COPY "oozelord/itm/RING95.ITM" "override"
+  	SAY NAME1 @48 // unidentified name for itm OR spell name
+  	SAY NAME2 @48 // unidentified name for itm OR spell name
+// Creatures
+  COPY "oozelord/cre/D8_EGRNS.CRE" "override"
+  SAY NAME1 @36 // unidentified name for itm OR spell name
+  SAY NAME2 @36 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_EGROO.CRE" "override"
+  SAY NAME1 @37 // unidentified name for itm OR spell name
+  SAY NAME2 @37 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_EOCRJ.CRE" "override"
+  SAY NAME1 @38 // unidentified name for itm OR spell name
+  SAY NAME2 @38 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_EMUSJ.CRE" "override"
+  SAY NAME1 @39 // unidentified name for itm OR spell name
+  SAY NAME2 @39 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_EMPBP.CRE" "override"
+  SAY NAME1 @40 // unidentified name for itm OR spell name
+  SAY NAME2 @40 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_EELBP.CRE" "override"
+  SAY NAME1 @41 // unidentified name for itm OR spell name
+  SAY NAME2 @41 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_EMCNF.CRE" "override"
+  SAY NAME1 @42 // unidentified name for itm OR spell name
+  SAY NAME2 @42 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_ETRMP.CRE" "override"
+  SAY NAME1 @43 // unidentified name for itm OR spell name
+  SAY NAME2 @43 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_EBONE.CRE" "override"
+  SAY NAME1 @44 // unidentified name for itm OR spell name
+  SAY NAME2 @44 // unidentified name for itm OR spell name
+  COPY "oozelord/cre/D8_ZARGN.CRE" "override"
+  SAY NAME1 @45 // unidentified name for itm OR spell name
+  SAY NAME2 @45 // unidentified name for itm OR spell name
+// Spells
+
+  COPY "oozelord/spl/d8losec1.spl" "override"
+  SAY NAME1 @49 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @49 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8losec2.spl" "override"
+  SAY NAME1 @49 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @49 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8losec3.spl" "override"
+  SAY NAME1 @49 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @49 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8losec4.spl" "override"
+  SAY NAME1 @49 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @49 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8losec5.spl" "override"
+  SAY NAME1 @49 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @49 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8oozefs.spl" "override"
+  SAY NAME1 @26 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @27 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8oozesc.spl" "override"
+  SAY NAME1 @32 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @33 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8oozimm.spl" "override"
+  SAY NAME1 @50 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @50 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8oozprj.spl" "override"
+  SAY NAME1 @24 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @25 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo1.spl" "override"
+  SAY NAME1 @4 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @14 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo2.spl" "override"
+  SAY NAME1 @5 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @15 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo3.spl" "override"
+  SAY NAME1 @6 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @16 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo4.spl" "override"
+  SAY NAME1 @7 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @17 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo5.spl" "override"
+  SAY NAME1 @8 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @18 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo6.spl" "override"
+  SAY NAME1 @9 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @19 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo7.spl" "override"
+  SAY NAME1 @10 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @20 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo8.spl" "override"
+  SAY NAME1 @11 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @21 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/d8sumoo9.spl" "override"
+  SAY NAME1 @12 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @22 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/SPPR747.spl" "override"
+  SAY NAME1 @13 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @23 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/SPPR748.spl" "override"
+  SAY NAME1 @28 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @29 // unidentified description for itm, spell description for spl
+  COPY "oozelord/spl/SPPR749.spl" "override"
+  SAY NAME1 @30 // unidentified name for itm OR spell name
+  SAY UNIDENTIFIED_DESC @31 // unidentified description for itm, spell description for spl
+  COPY "oozelord/2da/D8OOZE.2da" "override/CLABPR06.2da"  
+       "oozelord/2da/LUD8O.2da" "override/LUD8O.2da"
+       "oozelord/vvc" "override" 
+       "oozelord/bam" "override" 
+       "oozelord/eff" "override" 
