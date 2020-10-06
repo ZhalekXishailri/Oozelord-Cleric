@@ -1,0 +1,150 @@
+@1 = ~Oozelord Cleric Kit for BGEE and BG2EE~
+@2 = ~Oozelord~
+@3 = ~OOZELORD
+Followers of Ghaunadaur, Zargon, or Juiblex are uncommon but not unheard of among humanoids. Especially devout followers become oozelords, doing their best to ensure the dominance of slime and ooze on the Material Plane.
+Hit Die  d8
+Advantages
+	-May cast Summon Ooze I once per day. Gains one use at 	level 1 and an additional use at level 3, 5, 7, and 9.
+	-May cast Summon Ooze II once per day starting at level 3. 	Gains an additional 	use at level 5, 7, 9, and 11.
+	-May cast Summon Ooze III once per day starting at level 	5. Gains an additional use at level 7, 9, 11, and 13.
+	-May cast Summon Ooze IV once per day starting at level 7. 	Gains an additional use at level 9, 11, 13, and 15.
+	-May cast Summon Ooze V once per day starting at level 9. 	Gains an additional use at level 11, 13, 15, and 17.
+	-May cast Summon Ooze VI once per day starting at level 	11. Gains an additional use at level 13, 15, 17, and 19.
+	-May cast Summon Ooze VII once per day starting at level 	14. Gains an additional use at level 16, 18, 20, and 22.
+	-May cast Summon Ooze VIII once per day starting at level 	15. Gains an additional use at level 17, 19, 21, and 23.
+	-May cast Summon Ooze IX once per day starting at level 	17. Gains an additional use at level 19, 21, 23, and 25.
+	-May cast Ooze Projection once per day at level 1. Gains 	an additional use at level 5 and an additional use every  	5 levels.
+		-Ooze Projection The Oozelord throws a glob of 			caustic ooze at one target, dealing 2d6 acid damage 			per 5 levels.
+	-May cast Ooze Shield once per day starting at level 10. 
+	Gains an additional use every 10 levels.
+		-Ooze Shield  Identical to Fireshield, but provides 			acid resistance and reprises with acid and lasts 2 			turns.
+	-At level 15, melds halfway with an Ooze and gains many 
+	of the immunities of an ooze, but does not gain magic 
+	resistance.
+	-Gains unique High Level Abilities.
+Disadvantages 
+	-Thanks to <PRO_HISHER> revolting meld with ooze, the 
+	oozelord takes a -8 penalty to Charisma.
+	-Loses all Cure and Cause wounds spells.
+	-Alignment restricted to True Neutral, Chaotic Neutral, 
+	Neutral Evil, or Chaotic Evil.~
+@4 = ~Summon Ooze I~
+@5 = ~Summon Ooze II~
+@6 = ~Summon Ooze III~
+@7 = ~Summon Ooze IV~
+@8 = ~Summon Ooze V~
+@9 = ~Summon Ooze VI~
+@10 = ~Summon Ooze VII~
+@11 = ~Summon Ooze VIII~
+@12 = ~Summon Ooze IX~
+@13 = ~Call Aspect of Zargon~
+@14 = ~School  Conjuration (Summoning)
+Duration  1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Green Slime is summoned in the vicinity of the caster. The Empowered Green Slime will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@15 = ~School  Conjuration (Summoning)
+Duration  1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Gray Ooze is summoned in the vicinity of the caster. The Empowered Gray Ooze will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@16 = ~School  Conjuration (Summoning)
+Duration  1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Ochre Jelly is summoned in the vicinity of the caster. The Empowered Ochre Jelly will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@17 = ~School  Conjuration (Summoning)
+Duration  1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Mustard Jelly is summoned in the vicinity of the caster. The Empowered Mustard Jelly will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@18 = ~School  Conjuration (Summoning)
+Duration  1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Black Pudding is summoned in the vicinity of the caster. The Empowered Black Pudding will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@19 = ~School  Conjuration (Summoning)
+Duration  1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Elder Black Pudding is summoned in the vicinity of the caster. The Empowered Elder Black Pudding will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@20 = ~School  Conjuration (Summoning)
+Duration  1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Infernal Conflagration Ooze is summoned in the vicinity of the caster. The Empowered Infernal Conflagration Ooze will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@21 = ~School  Conjuration (Summoning)
+Duration 1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Teratomorph is summoned in the vicinity of the caster. The Empowered Teratomorph will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@22 = ~School  Conjuration (Summoning)
+Duration 1 turn/level 
+Upon completion of the spell, the oozelord opens a special gate to the Para-Elemental Plane of Ooze, and an Empowered Bone Ooze is summoned in the vicinity of the caster. The Empowered Bone Ooze will do the bidding of the caster until it is slain or the duration of the spell runs out.~
+@23 = ~Call Aspect of Zargon (Conjuration)
+Level  Quest
+Sphere  Summoning (Calling)
+Range  Visual range of the caster
+Duration  10 turns
+Casting Time  9
+Area of Effect  Special
+Saving Throw  None
+
+This devastating spell briefly breaches Zargon's intradimensional prison and calls and binds an Aspect of Zargon to the Oozelord's service for the spell's duration or until the Aspect is slain.~
+@24 = ~Ooze Projection~
+@25 = ~Ooze Projection
+The Oozelord throws a glob of caustic ooze at one target, dealing 2d6 acid damage per 5 levels.~
+@26 = ~Ooze Shield~
+@27 = ~Ooze Shield (Evocation)
+Effective Level  4
+Range  0
+Duration  2 turns
+Casting Time  4 
+Area of Effect  The caster
+Saving Throw  None
+
+The Ooze Shield protects the user from acid damage by surrounding the caster with a shield of Ooze. This shield does not only grant the user a 50% Acid Resistance, but also protects <PRO_HIMHER> from attacks made from within a 5-ft. radius around <PRO_HIMHER>. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 points of Acid damage.~
+@28 = ~Oozy Implosion~
+@29 = ~Oozy Implosion (Evocation)
+Level  Quest
+Range  40 ft.
+Duration  2 rounds
+Casting Time  5
+Area of Effect  1 creature
+Saving Throw  Special
+
+This spell creates an acid-filled rift in the earth beneath the target which implodes and closes in upon itself, crushing and dissolving the target and holding it for 1 round. The spell does 10d10 acid damage and 10d10 blunt damage. The victim can save vs. Spell for half.~
+@30 = ~Oozestorm~
+@31 = ~Oozestorm
+Level  Quest
+Range  270 ft.
+Duration  3 rounds
+Casting Time  8
+Area of Effect  15-ft. radius
+Saving Throw  Special
+
+Casting this spell causes the earth to shake and the heavens to boil with blood and energy. All enemies of the caster are struck down by acidic rain, earthquakes, and lightning.
+
+All enemies of 8th level or lower are slain instantly. The survivors are struck by acidic, poisonous rain and lightning. The storm lasts for 3 rounds. Each round, the victims suffer 1d6 electrical damage, 1d6 cold damage, and 1d6 acid damage (Save vs. Spell for half damage). They also have a chance to be poisoned (Save vs. Death negates) in the first round.~
+@32 = ~Ooze Aspect~
+@33 = ~The Oozelord, having discovered how to create a sentient ooze, becomes such a creature. In this form, the Oozelord gains great strength and toughness but becomes slower. Furthermore, <PRO_HESHE> can continue to cast spells in this form.~
+@34 = ~Ooze Aspect Token~
+@35 = ~This token represents the Oozelord's innate ability to shapechange into an alternate form resembling the Demon Lord Juiblex at will.~
+@36 = ~Empowered Green Slime~
+@37 = ~Empowered Gray Ooze~
+@38 = ~Empowered Ochre Jelly~
+@39 = ~Empowered Mustard Jelly~
+@40 = ~Empowered Black Pudding~
+@41 = ~Empowered Elder Black Pudding~
+@42 = ~Empowered Infernal Conflagration Ooze~
+@43 = ~Empowered Teratomorph~
+@44 = ~Empowered Bone Ooze~
+@45 = ~Aspect of Zargon~
+@46 = ~Tentacle~
+@47 = ~Belt~
+@48 = ~Ring~
+@49 = ~Loses Cure and Cause Spells~
+@50 = ~Ooze Immunities~
+@51 = ~Holy Symbol of Ghaunadaur~
+@52 = ~Only the most worthy and devoted servants of the That Which Lurks are granted these powerful holy symbols. 
+
+STATISTICS:
+
+Equipped abilities:
+- Strength: +1
+- Magic Resistance: +5%
+- Can memorize one extra 6th- and 7th-level Cleric spell
+
+Weight: 0~
+@53 = ~Gains Holy Symbol~
+@54 = ~Preliminary Setup (Install this if you are going to install the rest of the kit)~
+
+
+
+
+
+
