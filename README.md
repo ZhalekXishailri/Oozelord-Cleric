@@ -78,3 +78,5 @@ Version 1.2: Hopefully fixed HLA table, fixed non-oozelords getting oozelord spe
 Version 1.3: Fixed Infernal Conflagration Oozes, Mustard Jellies, and Ochre Jellies not attacking. Fixed Infernal Conflagration oozes not actually doing fire damage with their attacks.
 
 Version 1.4: Unified the BGEE and BG2EE branches of the mod, ensured EET compatibility
+
+Version 1.4.2: Fixed Oozeshield not responding to attacks
